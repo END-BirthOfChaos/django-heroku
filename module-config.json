@@ -1,0 +1,11 @@
+
+{
+    "seasonskyV3": {
+        "module-name": "SeasonSkyV3",
+
+        "themes": [
+            "default",
+            "noel"
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Création nouveau mot</h1>
+    <form method="post" action="/ours/wordgenerator/">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Générer votre mot"\>
+    </form>
+
+{% if form.is_valid %}
+
+
+
+<br><br><br>
+<img src="{% static "../static/images/wordgenerated.png" %}" alt="My image">
+<br><br>
+
+    <a href="/ours/accueil/">Retourner à l'accueil</a>
+{% endif %}
+</body>
+</html>

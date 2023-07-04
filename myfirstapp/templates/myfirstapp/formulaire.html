@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Création nouveau menu</h1>
+    <form method="post" action="/ours/formulaire/">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Créer le menu"\>
+    </form>
+
+{% if form.is_valid %}
+    <br><br>
+<h1> Menu OK </h1>
+
+
+
+<img src="{% static "../static/images/generated.png" %}" alt="My image">
+
+    <br><br>
+    <a href="/ours/accueil/">Retourner à l'accueil</a>
+{% endif %}
+</body>
+</html>
