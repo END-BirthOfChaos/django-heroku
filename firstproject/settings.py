@@ -28,6 +28,7 @@ CSRF_TRUSTED_ORIGINS = ['https://*']
 # Application definition
 
 INSTALLED_APPS = [
+    'myfirstapp',
     'myfirstapp.apps.MyfirstappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
