@@ -6,3 +6,4 @@ urlpatterns = [
     path('', views.accueil, name='accueil'),
     path('formulaire/', views.formulaire, name='formulaire'),
     path('wordgenerator/', views.wordgenerator, name='wordgenerator'),
+]
